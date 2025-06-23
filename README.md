@@ -3,7 +3,7 @@
 This is the source code for my **personal portfolio website**, built to showcase my projects, skills, and background as a web developer.
 
 ## 🔗 Live Demo
-You can check out the live version here: [your-portfolio-link.com](https://harshahegde.netlify.app/)
+You can check out the live version here: [Harsha-portfolio-link.com](https://harshahegde.netlify.app/)
 
 ## 🚀 Features
 - 🔥 Built with Modern techstack **React** and **Tailwind CSS**
