@@ -1,0 +1,30 @@
+/* hideScrollbar.css */
+
+/* For Chrome, Safari, Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* For IE, Edge, Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  
+/* hideScrollbar.css */
+
+/* Hide both scrollbars (horizontal and vertical) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .scrollbar-hide {
+    overflow: hidden; /* Hide both horizontal and vertical scrollbars */
+  }
+  
