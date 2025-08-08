@@ -1,15 +1,20 @@
 import React from "react";
 import skillList from "../data/skilldata";
-const Skills = ({isDark}) => {
+const Skills = ({ isDark }) => {
   return (
-    <div className={`skills md:flex grid-cols-3 bg-[] ${isDark?"text-white":"text-black"}  ${isDark?"border-blue-200":"border-black"} `} id="skills">
+    <div
+      className={`skills md:flex grid-cols-3 bg-[] ${
+        isDark ? "text-white" : "text-black"
+      }  ${isDark ? "border-blue-200" : "border-black"} `}
+      id="skills"
+    >
       {/* Only for Mobile Devices */}
-      <div className="image bg-yelow-400 mt-45 lg:mt-6 h-60 flex justify-center bg-aber-50 sm:hidden">
-        <div className="picture bg-blue-400 border-5  rounded-full h-50 w-50 flex justify-center overflow-hidden">
+      <div className="image mt-45 lg:mt-6 h-60 flex justify-center sm:hidden ">
+        <div className="picture bg-blue-400 border-5 mt-4 rounded-full h-50 w-50 flex justify-center overflow-hidden">
           <img
             src="images/Mecrop.jpg"
             alt="harsha-photo"
-            className="h-full w-full object-cover border-1px"
+            className="h-30 w-40 object-cover border-1px"
           />
         </div>
       </div>
@@ -25,7 +30,7 @@ const Skills = ({isDark}) => {
         {skillList.map((skill, index) =>
           skill.category == "frontend" ? (
             <div
-              className="inline-flex ml-12 bg-amber-20 h-25 w-30 mt-2 "
+              className="inline-flex md:ml-26 ml-12 bg-amber-20 h-25 w-30 mt-2 "
               key={index}
             >
               <img
@@ -49,7 +54,7 @@ const Skills = ({isDark}) => {
         </h2>
         {skillList.map((skill, index) =>
           skill.category == "backend" ? (
-            <div 
+            <div
               className="inline-flex ml-12 sm:ml-4  bg-amber-20 h-25 w-30  mt-2"
               key={index}
             >

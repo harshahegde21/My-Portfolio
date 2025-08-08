@@ -66,7 +66,7 @@ const skillList = [
     category: "tool",
   },
   {
-    sName: "NPM",
+    sName: "",
     image: "images/skills/npm.svg",
     category: "tool",
   },
