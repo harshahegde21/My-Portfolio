@@ -6,6 +6,7 @@ import About from "./pages/About.jsx"
 import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
+import Experience from "./pages/Experience.jsx";
 
 
 const App = () => {
@@ -13,10 +14,12 @@ const App = () => {
   const [isdark,setisDark] = useState(true);
   return (
     <div
-      className={`main min-h-screen w-full bg-cover bg-center bg-no-repeat m-0 ${isdark ? "bg-[#121212]" : "bg-white" }`}>
+      className={`main min-h-screen w-full bg-cover bg-center bg-no-repeat m-0 ${isdark ? "bg-[#0A131F]" : "bg-white" }`}>
       <Navbars isDark={isdark} setisDark={setisDark}/>
       <HomePage aboutRef={aboutRef} isDark={isdark} />
+      <Experience aboutRef={aboutRef} isDark={isdark}/>
       {/* <About aboutRef={aboutRef}/> */}
+      
       <Skills isDark={isdark} />
       <Projects isDark={isdark}/>
       <Contact isDark={isdark}/>

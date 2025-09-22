@@ -38,6 +38,16 @@ const Navbars = ({ isDark, setisDark }) => {
               >
                 <b>Home</b>
               </Nav.Link>
+
+              <Nav.Link
+                href="#experience"
+                className={`text-light mr-10 ${
+                  isDark ? "text-white" : "text-black"
+                }`}
+              >
+                <b>Experience</b>
+              </Nav.Link>
+
               <Nav.Link
                 href="#skills"
                 className={`text-light mr-10 ${
