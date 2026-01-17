@@ -1,4 +1,12 @@
 const myprojects = [
+     {
+    name: "Chat's App",
+    image: "images/project/pdemo1.svg",
+    link: "https://github.com/harshahegde21/Chat-s-App",
+    desc:"Chat's App is a chatting application where we can join group chat with random persons",
+    techstack: "React JS Vite, Tailwind CSS, Node JS, Express JS, Socket.io",
+    liveLink:"https://chat-s-app.vercel.app"
+  },
    {
     name: "Sorting Algorithm Visualizer",
     image: "images/project/pdemo1.svg",
@@ -6,6 +14,30 @@ const myprojects = [
     desc:"Animation vizualization for each step of sorting algorithms for given input",
     techstack: "React JS Vite, Tailwind CSS",
     liveLink:"https://harshssortingvisualizer.netlify.app"
+  },
+    {
+    name: "Doubt It",
+    image: "images/project/pdemo1.svg",
+    link: "https://github.com/harshahegde21/Doubt-It",
+    desc:"",
+    techstack: "React JS Vite, Tailwind CSS, Node JS, Express Js, SQL database",
+    liveLink:"https://github.com/harshahegde21/Doubt-It",
+  },
+  {
+    name: "Streak Maintain API",
+    image: "images/project/pdemo1.svg",
+    link: "https://github.com/harshahegde21/Streak-Api",
+    desc:"API endpoint which maintain streak everyday when its gets hit. Uses current date for streaks",
+    techstack: "Node JS, Express JS",
+    liveLink:"https://github.com/harshahegde21/Streak-Api",
+  },
+    {
+    name: "Portfolio site",
+    image: "images/project/pdemo.svg",
+    link: "",
+    desc:"Portfolio Showcasing my Skills",
+    techstack: "React Js, Tailwind CSS",
+    liveLink:"",
   },
   {
     name: "Language translator",
@@ -21,14 +53,6 @@ const myprojects = [
     link: "https://github.com/harshahegde21/Inventory-Backend.git",
     desc:"A Simple Application which does basic CRUD Operations.",
     techstack: "Node.js, Express js, MongoDB",
-    liveLink:"",
-  },
-  {
-    name: "Portfolio",
-    image: "images/project/pdemo.svg",
-    link: "",
-    desc:"Portfolio Showcasing my Skills",
-    techstack: "React Js, Tailwind CSS",
     liveLink:"",
   },
    {

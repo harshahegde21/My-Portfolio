@@ -70,6 +70,16 @@ const skillList = [
     image: "images/skills/npm.svg",
     category: "tool",
   },
+  {
+    sName: "Vercel",
+    image: "images/skills/vercel.png",
+    category: "tool",
+  },
+  {
+    sName: "Render",
+    image: "images/skills/render.png",
+    category: "tool",
+  },
 ];
 
 export default skillList;

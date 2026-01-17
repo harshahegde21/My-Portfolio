@@ -73,8 +73,7 @@ const HomePage = ({ aboutRef, isDark }) => {
           <p className="lg:mt-6">
             I'm a passionate Fullstack developer with a strong interest in
             building clean, responsive and fully functional user-friendly
-            websites. Currently exploring modern web technologies and sharpening
-            my full-stack skills. Eager to learn, grow, and contribute to
+            websites. Currently looking for internship oppurtunities. Eager to learn, grow, and contribute to
             real-world projects as a fresher 🚀.
           </p>
         </div>

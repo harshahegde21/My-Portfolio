@@ -41,7 +41,7 @@ const Navbars = ({ isDark, setisDark }) => {
 
               <Nav.Link
                 href="#experience"
-                className={`text-light mr-10 ${
+                className={`text-light mr-10 bg-amber-600 ${
                   isDark ? "text-white" : "text-black"
                 }`}
               >
