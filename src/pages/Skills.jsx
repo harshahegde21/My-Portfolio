@@ -4,7 +4,7 @@ import skillList from "../data/skilldata";
 const Skills = ({ isDark }) => {
   return (
     <div
-      className={`skills grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-10 relative md:bottom-49 ${
+      className={`skills grid grid-cols-1 md:grid-cols-3 gap-6 px-4 py-10 relative md:bottom-60 ${
         isDark ? "text-white" : "text-black"
       }`}
       id="skills"
@@ -25,51 +25,57 @@ const Skills = ({ isDark }) => {
       </div> */}
 
       {/* Frontend */}
-      <div className="border rounded-xl p-4">
-        <h2 className="text-center font-semibold mb-3 hover:bg-blue-600 rounded-xl">
+      <div className="border rounded-xl p-4 bg-black">
+        <h2 className="text-center font-semibold mb-3 hover:bg-blue-600 rounded-xl text-white">
           Frontend
         </h2>
-        {skillList.map(
-          (skill, index) =>
-            skill.category === "frontend" && (
-              <div key={index} className="flex items-center gap-2 mb-2">
-                <img src={skill.image} alt={skill.sName} className="h-10 w-10" />
-                <p>{skill.sName}</p>
-              </div>
-            )
-        )}
+        <div className="grid grid-cols-2 gap-2">
+          {skillList.map(
+            (skill, index) =>
+              skill.category === "frontend" && (
+                <div key={index} className="flex items-center gap-2 p-2 bg-gray-800 text-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <img src={skill.image} alt={skill.sName} className="h-8 w-8" />
+                  <p className="text-sm font-medium"> {skill.sName}</p>
+                </div>
+              )
+          )}
+        </div>
       </div>
 
       {/* Backend */}
-      <div className="border rounded-xl p-4">
-        <h2 className="text-center font-semibold mb-3 hover:bg-blue-600 rounded-xl">
+      <div className="border rounded-xl p-4 bg-black">
+        <h2 className="text-center font-semibold mb-3 hover:bg-green-600 rounded-xl text-white">
           Backend
         </h2>
-        {skillList.map(
-          (skill, index) =>
-            skill.category === "backend" && (
-              <div key={index} className="flex items-center gap-2 mb-2">
-                <img src={skill.image} alt={skill.sName} className="h-10 w-10" />
-                <p>{skill.sName}</p>
-              </div>
-            )
-        )}
+        <div className="grid grid-cols-2 gap-2">
+          {skillList.map(
+            (skill, index) =>
+              skill.category === "backend" && (
+                <div key={index} className="flex items-center gap-2 p-2 bg-gray-800 text-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <img src={skill.image} alt={skill.sName} className="h-8 w-8" />
+                  <p className="text-sm font-medium"> {skill.sName}</p>
+                </div>
+              )
+          )}
+        </div>
       </div>
 
       {/* Tools */}
-      <div className="border rounded-xl p-4">
-        <h2 className="text-center font-semibold mb-3 hover:bg-blue-600 rounded-xl">
+      <div className="border rounded-xl p-4 bg-black">
+        <h2 className="text-center font-semibold mb-3 hover:bg-purple-600 rounded-xl text-white">
           Tools
         </h2>
-        {skillList.map(
-          (skill, index) =>
-            skill.category === "tool" && (
-              <div key={index} className="flex items-center gap-2 mb-2">
-                <img src={skill.image} alt={skill.sName} className="h-10 w-10" />
-                <p>{skill.sName}</p>
-              </div>
-            )
-        )}
+        <div className="grid grid-cols-2 gap-2">
+          {skillList.map(
+            (skill, index) =>
+              skill.category === "tool" && (
+                <div key={index} className="flex items-center gap-2 p-2 bg-gray-800 text-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <img src={skill.image} alt={skill.sName} className="h-8 w-8" />
+                  <p className="text-sm font-medium">{skill.sName}</p>
+                </div>
+              )
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,13 @@
 const myprojects = [
+    {
+    name: "LeetTrack",
+    image: "images/project/pdemo1.svg",
+    link: "https://github.com/harshahegde21/LeetTrack",
+    desc:"LeetTrack is a platform to add and track only solved questions, letting you randomly pick them for practice instead of unsolved ones.",
+    techstack: "React JS Vite,CSS, Node JS, Express JS, MongoDB Atlas",
+    liveLink:"https://chat-s-app.vercel.app"
+  },
+  ,
      {
     name: "Chat's App",
     image: "images/project/pdemo1.svg",

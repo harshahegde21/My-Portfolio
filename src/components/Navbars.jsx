@@ -72,18 +72,23 @@ const Navbars = ({ isDark, setisDark }) => {
               >
                 <b>Contact</b>
               </Nav.Link>
-              <Nav
-                className={`text-white border-1 border-blue-200 h-6 w-10 sm:mt-2 bg-amber-50 rounded-xl cursor-pointer ${
-                  isDark ? "border-blue-300" : "border-black"
-                }`}
-              >
-                <img
-                  className="ml-1.5 h-5 w-5"
-                  src={`${isDark ? "lightmode.png" : "darkmode.png"}`}
-                  alt="darkmode"
+              <div className="flex items-center ml-4">
+                <button
                   onClick={() => setisDark(!isDark)}
-                />
-              </Nav>
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ${
+                    isDark ? 'bg-indigo-600' : 'bg-gray-200'
+                  }`}
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-300 ${
+                      isDark ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+                <span className={`ml-2 text-sm font-medium ${isDark ? 'text-white' : 'text-black'}`}>
+                  {isDark ? '🌙' : '☀️'}
+                </span>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>

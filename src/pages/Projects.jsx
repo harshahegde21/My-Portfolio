@@ -20,19 +20,30 @@ const Projects = ({ isDark }) => {
         {myprojects.map((proj, index) => (
           <div
             key={index}
-            className="min-w-[50%] sm:min-w-[60%] md:min-w-[40%] lg:min-w-[30%] flex-shrink-0 bg-gray-800 rounded-2xl p-4"
+            className="min-w-[50%] sm:min-w-[60%] md:min-w-[40%] lg:min-w-[30%] xl:min-w-[25%] max-w-[320px] flex-shrink-0 bg-gray-800 rounded-2xl p-3"
           >
             <img
               src={proj.image}
               alt={proj.name}
-              className="w-full h-48 sm:h-56 md:h-64 object-cover rounded-xl mb-4 border border-blue-400"
+              className="w-full h-36 sm:h-44 md:h-52 lg:h-48 object-cover rounded-xl mb-3 border border-blue-400"
             />
             <div>
               <span className="text-lg sm:text-xl font-semibold">{proj.name}</span>
               <p className="text-sm mt-1">{proj.desc}</p>
-              <p className="text-sm font-semibold mt-1">
-                <b className="font-bold">Tech Stack: </b> {proj.techstack}
-              </p>
+              <div className="mt-2">
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Tech Stack:</span>
+                <div className="flex flex-wrap gap-2 mt-1">
+                  {proj.techstack.split(',').map((tech, idx) => {
+                    const colors = ['bg-blue-500', 'bg-green-500', 'bg-purple-500', 'bg-red-500', 'bg-yellow-500', 'bg-indigo-500'];
+                    const color = colors[idx % colors.length];
+                    return (
+                      <span key={idx} className={`${color} text-white text-xs px-3 py-1 rounded-full shadow-sm`}>
+                        {tech.trim()}
+                      </span>
+                    );
+                  })}
+                </div>
+              </div>
               <a href={proj.link} target="_blank" rel="noopener noreferrer">
                 <Button className="flex items-center gap-2 px-4 py-1 bg-amber-400 text-black rounded-md hover:bg-amber-300 mt-2">
                   Code

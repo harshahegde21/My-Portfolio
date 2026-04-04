@@ -1,8 +1,18 @@
 const experiences = [
+   {
+    heading: "Krytil Pvt Ltd",
+    role: "Backend Developer",
+    date: "January 2026 - present",
+    projects: `
+      <p>Optimized MongoDB queries to improve database performance and reduce response time while working as a Backend Developer Intern at Krytil Pvt Ltd.</p>
+    `,
+     idCard:"images/Contributes/krytil.jpg"
+   
+  },
   {
     heading: "Open Source Connect India 2025",
     role: "Contributor",
-    date: "August 2025 - Present",
+    date: "August 2025 - September-2025",
     projects: `
       <p>Contributed to projects:</p>
       <ul>
@@ -21,16 +31,7 @@ const experiences = [
     contribution_dashboard: "https://www.osconnect.org/dashboard",
      idCard:"images/Contributes/contributor_id.png"
   },
-  {
-    heading: "GSSOC 25 - GirlScript Summer of Code",
-    role: "Contributor",
-    date: "August 2025 - October-2025",
-    projects: `
-      <p>Added AI Chatbot for FarmLoc , a parenting application for parents</p>
-    `,
-     idCard:"images/Contributes/gssoc25.jpg"
-   
-  },
+ 
 ];
 
 export default experiences;
