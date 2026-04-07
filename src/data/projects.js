@@ -7,6 +7,14 @@ const myprojects = [
     techstack: "React JS Vite,CSS, Node JS, Express JS, MongoDB Atlas",
     liveLink:"https://leet-track-wine.vercel.app"
   },
+     {
+    name: "EventSphere",
+    image: "images/project/pdemo1.svg",
+    link: "https://github.com/harshahegde21/EventSphere.git",
+    desc:"A platform to regester for events like Hackathons,Workshops hosted by hosts (usually colleges).",
+    techstack: "React JS Vite,CSS, Node JS, Express JS, MongoDB Atlas",
+    liveLink:"http://16.16.98.96/"
+  }
   ,
      {
     name: "Chat's App",
