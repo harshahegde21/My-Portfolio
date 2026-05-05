@@ -5,7 +5,7 @@ import Download from "../components/Download.jsx";
 const HomePage = ({ aboutRef, isDark }) => {
   const [text1, setText1] = useState("");
   const fullText = " Harsha Hegde";
-  const smfullText = "  Hello 👋, Iam";
+  const smfullText = "    Hello 👋, Iam";
   const [text2, setText2] = useState("");
   const handleScroll = () => {
     aboutRef.current?.scrollIntoView({ behaviour: "smooth" });
@@ -37,11 +37,19 @@ const HomePage = ({ aboutRef, isDark }) => {
     <div
       className={`sm:grid md:grid lg:grid grid-cols-2  ${
         isDark ? "text-white" : "text-black"
-      } `}
+      }  `}
       id="home"
     >
       <div className="intro-texts b-white sm:h-160 lg:h-160 h-60 md:mt-5">
         <div className="texts bg-blu-300 h-70 lg:h-30 lg:w-140 w-80 ml-5 mt-3 relative lg:top-25 lg:ml-20">
+          {/* 🔥 Tagline */}
+          {/* <p className="uppercase tracking-widest text-sm md:text-base text-blue-500 font-semibold mb-2 animate-pulse">
+            Not Just Another Developer
+          </p> */}
+          <p className="uppercase tracking-widest text-base md:text-lg lg:text-xl text-blue-500 font-semibold mb-2 animate-pulse">
+  Not Just Another Developer
+</p>
+
           <h2 className="text-2xl ">{text1} </h2>
           <h1 className="lg:text-5xl font-semibold">{text2} </h1>
           <h2 className="animate-bounce">
@@ -71,10 +79,7 @@ const HomePage = ({ aboutRef, isDark }) => {
             />
           </div>
           <p className="lg:mt-6">
-            I'm a passionate Fullstack developer with a strong interest in
-            building clean, responsive and fully functional user-friendly
-            websites. Currently looking for internship oppurtunities. Eager to learn, grow, and contribute to
-            real-world projects as a fresher 🚀.
+            Full-stack developer focused on building clean, scalable apps, with a strong interest in backend development and real-world problem solving—seeking an internship to contribute and grow 🚀
           </p>
         </div>
         <br />
@@ -97,6 +102,7 @@ const HomePage = ({ aboutRef, isDark }) => {
   );
 };
 export default HomePage;
+
 
 
 

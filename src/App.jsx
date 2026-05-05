@@ -7,8 +7,7 @@ import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import Experience from "./pages/Experience.jsx";
-
-
+import GithubSection from "./components/GithubContribution.jsx";
 const App = () => {
   const aboutRef= useRef(null);
   const [isdark,setisDark] = useState(true);
@@ -17,6 +16,7 @@ const App = () => {
       className={`main min-h-screen w-full bg-cover bg-center bg-no-repeat m-0 ${isdark ? "bg-[#0A131F]" : "bg-white" }`}>
       <Navbars isDark={isdark} setisDark={setisDark}/>
       <HomePage aboutRef={aboutRef} isDark={isdark} />
+      <GithubSection isDark={isdark}/>
       <Experience aboutRef={aboutRef} isDark={isdark}/>
       {/* <About aboutRef={aboutRef}/> */}
       
