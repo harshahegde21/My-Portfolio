@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 const Download = () => {
   return (
     <div className="ml-5 mt-4 relative bottom-6 md:ml-20 animate-bounce">
-      <a href="/HarshaNewResume.pdf" download="Harsha_Resume">
+      <a href="/Harsha_Updated_Resume_2026.pdf" download="Harsha_Resume">
         <Button>Download Resume</Button>
       </a>
     </div>

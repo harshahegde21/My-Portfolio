@@ -18,6 +18,7 @@
     "react-dom": "^19.0.0",
     "react-github-calendar": "^5.0.6",
     "react-router-dom": "^7.5.3",
+    "repo-story": "^1.0.0",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
