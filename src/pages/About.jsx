@@ -56,8 +56,8 @@ const About = ({ aboutRef }) => {
       <div className="flex justify-center">
         <div className="picture bg-blue-400 border-4 border-blue-200 rounded-full h-48 w-48 sm:h-60 sm:w-60 lg:h-72 lg:w-72 flex justify-center overflow-hidden">
           <img
-            src="images/Mecrop.jpg"
-            alt="Harsha-image"
+            src="/images/web-dev-logo.jpg"
+            alt="Web developer logo"
             className="h-full w-full object-cover"
           />
         </div>

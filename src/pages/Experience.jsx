@@ -13,7 +13,7 @@ const Experience = ({ aboutRef, isDark }) => {
       <div className="flex justify-center md:hidden">
         <div className="picture bg-blue-300 border-4 mt-4 rounded-full h-40 w-40 flex justify-center overflow-hidden">
           <img
-            src="/Harsha-bg-removed.jpg"
+            src="/images/web-dev-logo.jpg"
             alt="harsha-photo"
             className="h-full w-full object-cover"
           />

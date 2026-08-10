@@ -92,7 +92,7 @@ const HomePage = ({ aboutRef, isDark }) => {
       <div className="image bg-yelow-400 mt-35 lg:mt-0  justify-center lg:h-160 hidden md:block lg:ml-30 ">
         <div className="picture g-blue-400 border-5  border-blue-200 rounded-full h-50 w-50 flex justify-center overflow-hidden lg:mt-30 ">
           <img
-            src="/Harsha-bg-removed.jpg"
+            src="/images/web-dev-logo.jpg"
             alt="Harsha-image"
             className="h-full w-full object-cover border-1px"
           />

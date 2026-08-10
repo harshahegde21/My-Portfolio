@@ -1,5 +1,13 @@
 const myprojects = [
-    {
+   {
+    name: "Clarif-AI",
+    image: "images/project/pdemo1.svg",
+    link: "https://github.com/harshahegde21/Doubt-It",
+    desc:"  An academic doubt-solving platform that connects students with tutors while providing instant assistance through an integrated AI chat.",
+    techstack: "React JS Vite, Tailwind CSS, Node JS, Express Js, SQL database",
+    liveLink:"https://clarif-ai-harsha.vercel.app/",
+  },  
+  {
     name: "LeetTrack",
     image: "images/project/pdemo1.svg",
     link: "https://github.com/harshahegde21/LeetTrack",
@@ -38,7 +46,7 @@ const myprojects = [
     link: "https://github.com/harshahegde21/Doubt-It",
     desc:"",
     techstack: "React JS Vite, Tailwind CSS, Node JS, Express Js, SQL database",
-    liveLink:"https://github.com/harshahegde21/Doubt-It",
+    liveLink:"https://clarif-ai-harsha.vercel.app/",
   },
   {
     name: "Streak Maintain API",
